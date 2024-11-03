@@ -1,0 +1,26 @@
+﻿Estimate summary,,,,,,,,,
+Upfront cost,Monthly cost,Total 12 months cost,Currency,,,,,,
+0,6275.23,75302.76,USD,,,,,,
+,,* Includes upfront cost,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Detailed Estimate,,,,,,,,,
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+My Estimate,US East (N. Virginia),,Amazon Route 53,0,183,2196,USD,,"Hosted Zones (1), Number of Elastic Network Interfaces (2)"
+My Estimate,US East (N. Virginia),,Application Load Balancer,0,34.45,413.4,USD,,Number of Application Load Balancers (2)
+My Estimate,US East (N. Virginia),,VPN Connection,0,299.33,3591.96,USD,,"Working days per month (22), Number of Site-to-Site VPN Connections (2)"
+My Estimate,US East (N. Virginia),,Amazon EC2 ,0,3466.56,41598.72,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 8), Advance EC2 instance (m5.4xlarge), Pricing strategy (EC2 Instance Savings Plans 1yr  No Upfront), Enable monitoring (disabled), EBS Storage amount (1000 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 TB per month)"
+My Estimate,US East (N. Virginia),,Amazon RDS for MySQL,0,2043.452,24521.42,USD,,"Storage amount (1000 GB), Storage for each RDS instance (General Purpose SSD (gp2)), Nodes (2), Instance type (db.m5.2xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (Reserved 1yr No Upfront), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for total retention (per vCPU per month) (1.50), Additional backup storage (1000 GB), Total Size of Backup Processed for Export (GB) (1000 per month), Number of hours running on Amazon RDS Extended Support ( per month)"
+My Estimate,US East (N. Virginia),,S3 Standard,0,238.28,2859.36,USD,,"Data returned by S3 Select (1 TB per month), S3 Standard storage (10 TB per month), Data scanned by S3 Select (1 TB per month), PUT, COPY, POST, LIST requests to S3 Standard ()"
+My Estimate,US East (N. Virginia),,S3 Glacier Deep Archive,0,10.16,121.92,USD,,"S3 Glacier Deep Archive Average Object Size (100 MB), S3 Glacier Deep Archive storage (10 TB per month)"
+My Estimate,US East (N. Virginia),,Data Transfer,0,0,0,USD,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Acknowledgement,,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Rationale: to reduce the cost by use reversed instances 1 year period.,,,,,,,,,
+"1. In EC2-instance service, changed to one-year reserve instances for the same instance type.",,,,,,,,,
+"2. In RDS service, changed to one-year reserve instances for same RDS instance type.",,,,,,,,,
